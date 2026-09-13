@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دریافت سریع گواهی اشتغال به تحصیل</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+    <script src="Enrollment.js" defer></script>
+    <link rel="stylesheet" href="Enrollment.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yekan-font@1.0.0/css/yekan-font.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="mainContain">
+        
+        <table class="topTitles">
+            <tr>
+                <td>جمهوری اسلامی ایران</td>
+                <td>وزارت آموزش و پرورش</td>
+                <td>دوره تحصیلی:&nbsp; ابتدایی توصیفی</td>
+                <td>گواهی اشتغال به تحصیل</td>
+            </tr>
+        </table>
+        <table class="picId">
+            <tr>
+                <td><label for="certificateId">شماره:</label></td>
+                <td><input type="text" id="certificateId" name="certificateId" class="persian" value="110"></td>
+            </tr>
+        </table>
+        <div class="mainContent">
+            <div class="parentDiv">
+                <div>
+                    <label for="">بدین وسیله گواهی میشود</label>
+                    <input type="text" id="" class="fullName">
+                </div>
+                <div>
+                    <label for="mel">کد ملی</label>
+                    <input type="text" id="mel" minlength="10" maxlength="15" value="" class="persian melli">
+                </div>
+                <div>
+                    <label for="">فرزند</label>
+                    <input type="text" id="" value="">
+                </div>
+            </div>
+            <div class="parentDiv">
+                <div>
+                    <label for="">شماره شناسنامه</label>
+                    <input type="text" id="" value="" class="persian shenas" >
+                </div>
+                <div>
+                    <label for="birthDay">تاریخ تولد:</label>
+                    <input type="text" id="birthDay" value="" class="persian">
+                </div>
+                <div>
+                    <label for="">سال تحصیلی:</label>
+                    <input type="text" id="" value="1404-1405" class="persian year">
+                </div>
+            </div>
+            <div class="parentDiv">
+                <div>
+                    <label for="">در مدرسه: </label>
+                    <input type="text" id="" value="" class="school">
+                </div>
+                <div>
+                    <label for="">در پایه: </label>
+                    <input type="text" id="" value="" class="grade">
+                </div>
+            </div>
+            <div class="parentDiv">
+                <div class="gray">
+                    مشغول به تحصیل می باشد.
+                </div>
+            </div>
+        </div>
+        <div class="dateContain">
+            <label for="">این گواهی طبق تقاضای مورخ:</label>
+            <div class="dateInp">
+            <input type="text" placeholder="" class="today persian">
+            <span class="hide">تاریخ:</span>
+            </div>
+        </div>
+        <div class="forContain">
+            <label for="" class="gray">فقط به منظور ارائه به:</label>
+            <input type="text">
+        </div>
+        <div>
+            <p>
+                صادر گردیده و فاقد ارزش دیگری می باشد.
+            </p>
+        </div>
+        <div class="redLeft">
+            این گواهی بدون تایید (مهر و امضای زنده مدیر) فاقد اعتبار می‌باشد
+        </div>
+
+        <div class="lastPart">
+        <div class="imgContain">
+            <img src="" class="theImg" alt="محل قرار گیری رمزینه">
+        </div>
+        <div class="lastTexts">
+            <h6>مهر و امضا مدیر مدرسه</h6>
+            <input type="text" class="persian">
+        </div>
+        </div>
+
+        <div class="upload" accept="image/*">
+            
+            <img src="" id="imageUpload" alt="محل بارگزاری تصویر">
+
+
+        </div>
+    </div>
+    <h3 class="hide" style="color:red;">برای دریافت گواهی اشتغال به تحصیل قسمت های خالی را کامل کنید و بر روی گزینه پرینت کلیک فرمایید.</h3>
+
+    <label for="uploadBut" class="uploadBut hide">بارگزاری تصویر</label>
+    <input type="file" id="uploadBut" hidden>
+    <button class="print hide">پرینت</button>
+
+</body>
+
+</html>
